@@ -92,6 +92,27 @@ footer {
     margin-top: auto; /* Zajistí, že footer bude dole */
 }
 
+/* Section styles */
+section {
+    text-align: center; /* Ujistíme se, že vše bude zarovnané na střed */
+    margin-bottom: 3rem;
+    padding: 0 10px; /* Padding pro lepší vzhled na mobilu */
+    margin-top: 20px; /* Posune textovou sekci o 20px dolů */
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #FFB874; /* Oranžová barva pro nadpis */
+    text-align: center; /* Zarovnání na střed */
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .image-container {
