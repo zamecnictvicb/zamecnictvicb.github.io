@@ -20,7 +20,7 @@ body {
 header {
     background: linear-gradient(90deg, #FFB874, #FF9E42);
     color: white;
-    padding: 1rem 2rem; 
+    padding: 1rem 2rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -59,9 +59,9 @@ header nav ul li a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     justify-content: center;
-    margin: 2rem auto;
+    margin: 0 auto; /* Oprava marginu */
     padding: 0; /* Odstranění paddingu */
-    width: 100%; /* Zajistí, že kontejner bude mít šířku 100% */
+    width: 100%; /* Zajišťuje, že kontejner bude mít 100% šířku */
 }
 
 .image-container a {
@@ -144,6 +144,12 @@ section p {
 
     .image-container {
         grid-template-columns: 1fr; /* 1 obrázek na řádku */
+        margin: 0; /* Odstranění marginu */
+        padding: 0; /* Odstranění paddingu */
+    }
+
+    header {
+        padding: 1rem; /* Snížení paddingu na mobil */
     }
 
     header h1 {
