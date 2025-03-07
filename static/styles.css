@@ -11,7 +11,7 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Zajistí, že body vyplní celou výšku obrazovky */
 }
 
 /* Header */
@@ -84,9 +84,10 @@ footer {
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
-    position: sticky;
-    bottom: 0;
     width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* Zajistí, že footer bude dole */
 }
 
 /* Responsive Design */
@@ -99,6 +100,7 @@ footer {
 @media (max-width: 768px) {
     .image-container {
         grid-template-columns: 1fr; /* 1 obrázek na řádku pro velmi malé obrazovky */
+        padding: 0 10px; /* Přidání 10px mezery po stranách pro mobil */
     }
 
     header h1 {
@@ -110,7 +112,15 @@ footer {
         gap: 1rem;
     }
 
+    section {
+        padding: 1rem; /* Menší padding pro mobil */
+    }
+
+    section h2 {
+        font-size: 1.5rem; /* Zmenšení nadpisu na mobilu */
+    }
+
     section p {
-        font-size: 1rem;
+        font-size: 1rem; /* Zmenšení textu pro lepší čitelnost */
     }
 }
