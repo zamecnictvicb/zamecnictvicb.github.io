@@ -60,8 +60,9 @@ header nav ul li a:hover {
     gap: 1rem;
     justify-content: center;
     margin: 0 auto; /* Oprava marginu */
-    padding: 0; /* Odstranění paddingu */
-    width: 100%; /* Zajišťuje, že kontejner bude mít 100% šířku */
+    padding: 0 8px; /* Přidání 8px paddingu z obou stran */
+    width: calc(100% - 16px); /* Zajistí, že šířka bude 100% - 16px (8px z obou stran) */
+    box-sizing: border-box;
 }
 
 .image-container a {
@@ -92,6 +93,11 @@ footer {
     width: 100%;
     position: relative;
     margin-top: auto;
+    /* Pokud chcete footer fixně dole na obrazovce, přidejte: */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* Section styles */
@@ -145,7 +151,7 @@ section p {
     .image-container {
         grid-template-columns: 1fr; /* 1 obrázek na řádku */
         margin: 0; /* Odstranění marginu */
-        padding: 0; /* Odstranění paddingu */
+        padding: 0 8px; /* Přidání paddingu z obou stran na mobilu */
     }
 
     header {
