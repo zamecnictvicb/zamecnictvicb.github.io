@@ -18,7 +18,7 @@ body {
 header {
     background: linear-gradient(90deg, #FFB874, #FF9E42); /* Trošičku tmavší oranžová */
     color: white;
-    padding: 2rem 2rem; /* Zvýšil jsem padding pro větší prostor kolem textu */
+    padding: 2rem 2rem; 
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
