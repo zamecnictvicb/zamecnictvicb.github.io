@@ -75,25 +75,24 @@ section p {
     color: #555;
 }
 
-/* Video Section */
-.video-container {
+/* Image Section */
+.image-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 videa vedle sebe */
+    grid-template-columns: repeat(4, 1fr); /* 4 obrázky vedle sebe */
     gap: 2rem;
     justify-content: center;
     margin: 2rem auto;
 }
 
-.video-container iframe {
+.image-container img {
     width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    border: 4px solid #FFB874; /* Trošičku tmavší oranžový okraj */
+    border-radius: 15px; /* Zaoblené rohy */
+    border: 4px solid #FFB874; /* Oranžový okraj */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Jemný stín */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.video-container iframe:hover {
+.image-container img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Zvýrazněný stín při najetí */
 }
@@ -112,14 +111,14 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .video-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 videa na řádku pro menší obrazovky */
+    .image-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 obrázky na řádku pro menší obrazovky */
     }
 }
 
 @media (max-width: 768px) {
-    .video-container {
-        grid-template-columns: 1fr; /* 1 video na řádku pro velmi malé obrazovky */
+    .image-container {
+        grid-template-columns: 1fr; /* 1 obrázek na řádku pro velmi malé obrazovky */
     }
 
     header h1 {
